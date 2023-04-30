@@ -3,9 +3,9 @@
 {% block title %}Правка личных данных{% endblock %}
 {% block content %}
 <h2>Правка личных данных пользователя {{ user.username }}</h2>
-<form method="post" enctype="multipart/form-data">
+ <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {% bootstrap_form form layout='horizontal' %}
     {% bootstrap_button button_type="submit" button_class="btn btn-light"  content="Сохранить" %}
-</form>
+ </form>
 {% endblock %}
