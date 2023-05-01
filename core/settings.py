@@ -24,8 +24,6 @@ INSTALLED_APPS = [
     'captcha',
     'rest_framework',
     'corsheaders',
-    "crispy_forms",
-    "crispy_bootstrap5",
     #'api.apps.ApiConfig',
 ]
 
