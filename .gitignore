@@ -1,5 +1,5 @@
 /ittutor.data
 /media
 /myvenv
-/setings.py
-/migrations
+core/setings.py
+main/migrations
