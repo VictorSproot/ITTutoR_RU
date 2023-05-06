@@ -141,7 +141,7 @@ def by_rubric(request, pk):
     else:
         keyword = ''
     form = SearchForm(initial={'keyword': keyword})
-    paginator = Paginator(bbs, 1)
+    paginator = Paginator(bbs, 10)
     if 'page' in request.GET:
         page_num = request.GET['page']
     else:
