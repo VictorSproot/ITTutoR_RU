@@ -79,7 +79,7 @@ admin.site.register(SubRubric, SubRubricAdmin)
 
 
 class BbAdmin(admin.ModelAdmin):
-    list_display = ( 'title','rubric', 'content', 'author', 'formate', 'created_at')
+    list_display = ( 'title', 'writer','rubric', 'author', 'formate', 'created_at')
     fields = ('title', ('rubric', 'author'), 'lang_category', 'content', 'relise', 'writer', 'image', 'formate', 'file_book', 'slug', 'is_active')
    
 
