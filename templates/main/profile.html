@@ -30,7 +30,7 @@
   {% url 'main:profile_bb_detail' pk=bb.pk as url %}
 <hr>
 <div class="row">
-<div class="col-1">
+<div class="col-1 d-none d-lg-block">
 <a href="{{ url }}{{ all }}">
    {% if bb.image %}
 <img src="{% thumbnail bb.image 'default' %}" class="border border-secondary" width=100% alt="{{ bb.title }}">
