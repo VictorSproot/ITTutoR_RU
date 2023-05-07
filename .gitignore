@@ -3,3 +3,4 @@
 /myvenv
 core/settings.py
 main/migrations
+core/__pycache__/settings.cpython-310.pyc
