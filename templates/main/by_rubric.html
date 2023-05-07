@@ -10,7 +10,7 @@
     {% url 'main:detail' rubric_pk=rubric.pk pk=bb.pk as url %}
 <hr>
 <div class="row">
-<div class="col-3">
+<div class="col-md-3">
 <a href="{{ url }}{{ all }}">
     {% if bb.image %}
 <img src="{% thumbnail bb.image 'default' %}" width=100% alt="{{ bb.title }}">

@@ -5,9 +5,9 @@
 {% block title %}Профиль пользователя{% endblock %}
 {% block content %}
 <div class="row align-items-start">
-<div class="col-4">
+<div class="col-md-3">
   {% if user.avatar %}
-<img src="{{ user.avatar.url }}" class="rounded border border-secondary border-2" width="250" alt="{{ user.username }}"><br>
+<img src="{% thumbnail user.avatar 'default' %}" class="rounded border border-secondary border-2" width=100% alt="{{ user.username }}"><br>
   {% else %}
 <img src="{% static 'image/notimage.png' %}" width=100% alt="{{ user.username }}">
   {% endif %}
@@ -23,6 +23,7 @@
   {% endif %}
 </div>
 <div class="col">
+<div class="d-lg-none"><br></div> 
 <h3>Ваши книги:</h3>
   {% if bbs %}
   {% for bb in bbs %}
